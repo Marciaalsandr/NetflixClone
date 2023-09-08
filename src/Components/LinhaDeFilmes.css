@@ -1,0 +1,50 @@
+.LinhaDeFilmes{
+    margin-bottom: 30px;
+}
+.LinhaDeFilmes h2 {
+    margin: 0px 0px 0px 30px; 
+}
+.LinhadeFilmes--listarea{ 
+    overflow-x: hiddon;
+    padding-left: 30px;
+}
+.LinhaDeFilmes-list{
+    width: 9999px;
+}
+.LinhaDeFilmes--item{
+    display: inline-block;
+    width: 150px;
+    cursor: pointer;
+}
+.LinhaDeFilmes--item img{
+     width: 100%;
+     transform: scale(0.9);
+     transition: all ease 0.2s;
+}
+.LinhaDeFilmes--item img:hover{
+    transform: scale(1);
+}
+.LinhaDeFilmes--left,.LinhaDeFilmes--right{
+    position: absolute;
+    width: 40px;
+    height: 225px;
+    background-color:rgba(0,0,0,0.6);
+    z-index: 99;
+    display:flex;
+    justify-items: center;
+    justify-content: center;
+    overflow: hidden;
+    cursor: pointer;
+    opacity: 0;
+    transition: all ease 0.5s;
+}
+.LinhaDeFilmes--left{
+    left: 0;
+}
+.LinhaDeFilmes{
+    right: 0;
+}
+.LinhaDeFilmes .LinhaDeFilmes--left,
+.LinhaDeFilmes .LinhaDeFilmes--right{
+    opacity: 1;
+}
